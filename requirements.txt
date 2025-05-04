@@ -1,3 +1,2 @@
 psycopg[binary]
-unittest
 tk
