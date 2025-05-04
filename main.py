@@ -10,6 +10,7 @@ from car_view import CarView
 
 def main():
     # database credentials
+    #to test git
     conn = psycopg.connect(dbname="final", user="postgres", password="CS330UNR", host="host.docker.internal", port="5432")
 
     # Setup Models With Psycopg
