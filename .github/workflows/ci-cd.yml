@@ -66,5 +66,5 @@ jobs:
 
     - name: Package application
       run: |
-        mkdir dist
-        cp -r . dist/
+        mkdir -p dist
+        rsync -av --exclude='dist' . dist/
