@@ -9,9 +9,12 @@ from user_cars_view import UserCarsView
 from car_view import CarView
 
 def main():
-    # database credentials
-    #to test git
-    conn = psycopg.connect(dbname="final", user="postgres", password="CS330UNR", host="host.docker.internal", port="5432")
+    try:
+        conn = psycopg.connect(dbname="final", user="postgres", password="CS330UNR", host="localhost", port="5432")
+    except psycopg.OperationalError as e:
+        raise ConnectionError(
+            "Failed to connect to the PostgreSQL database. Ensure the database is running and credentials are correct."
+        ) from e
 
     # Setup Models With Psycopg
     user_cars_model = UserCarsModel(conn)
