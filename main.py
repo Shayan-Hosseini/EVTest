@@ -10,7 +10,7 @@ from car_view import CarView
 
 def main():
     # database credentials
-    conn = psycopg.connect(dbname="final", user="postgres", password="CS330UNR", host="localhost", port="5432")
+    conn = psycopg.connect(dbname="final", user="postgres", password="CS330UNR", host="host.docker.internal", port="5432")
 
     # Setup Models With Psycopg
     user_cars_model = UserCarsModel(conn)
