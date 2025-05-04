@@ -1,0 +1,501 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.2 (Postgres.app)
+-- Dumped by pg_dump version 16.2
+
+-- Started on 2024-05-05 15:46:14 PDT
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3640 (class 0 OID 16418)
+-- Dependencies: 217
+-- Data for Name: battery; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.battery (id, fastcharge_kmh, rapidcharge, plugtype, range_id) FROM stdin;
+103	940	Yes	Type 2 CCS	5
+102	250	Yes	Type 2 CCS	10
+101	620	Yes	Type 2 CCS	15
+100	560	Yes	Type 2 CCS	20
+99	190	Yes	Type 2 CCS	25
+98	620	Yes	Type 2 CCS	30
+97	220	Yes	Type 2 CCS	35
+96	420	Yes	Type 2 CCS	40
+95	650	Yes	Type 2 CCS	45
+94	540	Yes	Type 2 CCS	50
+93	440	Yes	Type 2 CCS	55
+92	230	Yes	Type 2 CHAdeMO	60
+91	380	Yes	Type 2 CCS	65
+90	650	Yes	Type 2 CCS	70
+89	210	Yes	Type 2 CCS	75
+88	590	Yes	Type 2 CCS	80
+87	780	Yes	Type 2 CCS	85
+86	170	Yes	Type 2 CCS	90
+85	260	Yes	Type 2 CCS	95
+84	260	Yes	Type 2 CCS	100
+83	420	Yes	Type 2 CCS	105
+82	930	Yes	Type 2 CCS	110
+81	230	Yes	Type 2 CCS	115
+80	850	Yes	Type 2 CCS	120
+79	910	Yes	Type 2 CCS	125
+78	560	Yes	Type 2 CCS	130
+77	490	Yes	Type 2 CCS	135
+76	470	Yes	Type 2 CCS	140
+75	270	Yes	Type 2 CCS	145
+74	380	Yes	Type 2 CCS	150
+73	450	Yes	Type 2 CCS	155
+72	350	Yes	Type 2 CCS	160
+71	230	Yes	Type 2 CCS	165
+70	710	Yes	Type 2 CCS	170
+69	240	Yes	Type 2 CCS	175
+68	390	Yes	Type 2 CHAdeMO	180
+67	190	Yes	Type 2 CHAdeMO	185
+66	570	Yes	Type 2 CCS	190
+65	230	Yes	Type 2 CCS	195
+64	440	Yes	Type 2 CCS	200
+63	560	Yes	Type 2	205
+62	210	Yes	Type 2 CCS	210
+61	610	Yes	Type 2 CCS	215
+60	170	Yes	Type 2 CCS	220
+59	170	Yes	Type 2 CCS	225
+58	340	Yes	Type 2 CCS	230
+57	210	Yes	Type 2 CCS	235
+56	730	Yes	Type 2 CCS	240
+55	540	Yes	Type 2 CCS	245
+54	350	Yes	Type 2 CCS	250
+53	590	Yes	Type 2 CCS	255
+52	920	Yes	Type 2 CCS	260
+51	390	Yes	Type 2 CCS	265
+50	560	Yes	Type 2 CCS	270
+49	490	Yes	Type 2	275
+48	190	Yes	Type 2 CCS	280
+47	380	Yes	Type 2 CCS	285
+46	0	No 	Type 2	290
+45	380	Yes	Type 2 CCS	295
+44	550	Yes	Type 2	300
+43	230	Yes	Type 2 CCS	305
+42	900	Yes	Type 2 CCS	310
+41	520	Yes	Type 2 CCS	315
+40	340	Yes	Type 2 CCS	320
+39	430	Yes	Type 2 CCS	325
+38	890	Yes	Type 2 CCS	330
+37	190	Yes	Type 1 CHAdeMO	335
+36	710	Yes	Type 2 CCS	340
+35	0	No 	Type 2	345
+34	410	Yes	Type 2 CCS	350
+33	260	Yes	Type 2 CCS	355
+32	540	Yes	Type 2 CCS	360
+31	770	Yes	Type 2 CCS	365
+30	460	Yes	Type 2 CCS	370
+29	270	Yes	Type 2 CCS	375
+28	230	Yes	Type 2 CCS	380
+27	550	Yes	Type 2 CCS	385
+26	0	No 	Type 2	390
+25	360	Yes	Type 2 CCS	395
+24	810	Yes	Type 2 CCS	400
+23	470	Yes	Type 2 CCS	405
+22	480	Yes	Type 2	410
+21	0	No 	Type 2	415
+20	380	Yes	Type 2 CCS	420
+19	290	Yes	Type 2 CCS	425
+18	330	Yes	Type 2 CCS	430
+17	740	Yes	Type 2 CCS	435
+16	470	Yes	Type 2 CCS	440
+15	540	Yes	Type 2 CCS	445
+14	440	Yes	Type 2 CCS	450
+13	510	Yes	Type 2 CCS	455
+12	0	No 	Type 2	460
+11	320	Yes	Type 2 CCS	465
+10	500	Yes	Type 2 CCS	470
+9	330	Yes	Type 2 CCS	475
+8	470	Yes	Type 2 CCS	480
+7	220	Yes	Type 2 CCS	485
+6	420	Yes	Type 2 CCS	490
+5	440	Yes	Type 2 CCS	495
+4	540	Yes	Type 2 CCS	500
+3	440	Yes	Type 2 CCS	505
+2	450	Yes	Type 2 CCS	510
+1	480	Yes	Type 2 CCS	515
+\.
+
+
+--
+-- TOC entry 3641 (class 0 OID 16428)
+-- Dependencies: 218
+-- Data for Name: car; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.car (id, brand, model, bodystyle, seat, priceeuro, battery_id, performance_id) FROM stdin;
+100	Tesla 	Model 3 Long Range Dual Motor	Sedan	5	55480	103	1
+110	Volkswagen 	ID.3 Pure	Hatchback	5	30000	102	2
+120	Polestar 	2	Liftback	5	56440	101	3
+130	BMW 	iX3	SUV	5	68040	100	4
+140	Honda 	e 	Hatchback	4	32997	99	5
+150	Lucid 	Air 	Sedan	5	105000	98	6
+160	Volkswagen 	e-Golf 	Hatchback	5	31900	97	7
+170	Peugeot 	e-208	Hatchback	5	29682	96	8
+180	Tesla 	Model 3 Standard Range Plus	Sedan	5	46380	95	9
+190	Audi 	Q4 e-tron	SUV	5	55000	94	10
+200	Mercedes 	EQC 400 4MATIC	SUV	5	69484	93	11
+210	Nissan 	Leaf 	Hatchback	5	29234	92	12
+220	Hyundai 	Kona Electric 64 kWh	SUV	5	40795	91	13
+230	BMW 	i4	Sedan	5	65000	90	14
+240	Hyundai 	IONIQ Electric	Liftback	5	34459	89	15
+250	Volkswagen 	ID.3 Pro S	Hatchback	4	40936	88	16
+260	Porsche 	Taycan Turbo S	Sedan	4	180781	87	17
+270	Volkswagen 	e-Up! 	Hatchback	4	21421	86	18
+280	MG 	ZS EV	SUV	5	30000	85	19
+290	Mini 	Cooper SE 	Hatchback	4	31681	84	20
+300	Opel 	Corsa-e 	Hatchback	5	29146	83	21
+310	Tesla 	Model Y Long Range Dual Motor	SUV	7	58620	82	22
+320	Skoda 	Enyaq iV 50	SUV	5	35000	81	23
+330	Audi 	e-tron GT 	Sedan	4	125000	80	24
+340	Tesla 	Model 3 Long Range Performance	Sedan	5	61480	79	25
+350	Volkswagen 	ID.4	SUV	5	45000	78	26
+360	Volkswagen 	ID.3 Pro	Hatchback	5	33000	77	27
+370	Volvo 	XC40 P8 AWD Recharge	SUV	5	60437	76	28
+380	BMW 	i3 120 Ah	Hatchback	4	38017	75	29
+390	Peugeot 	e-2008 SUV	SUV	5	34361	74	30
+400	Audi 	e-tron 50 quattro	SUV	5	67358	73	31
+410	Kia 	e-Niro 64 kWh	SUV	5	38105	72	32
+420	Renault 	Zoe ZE50 R110	Hatchback	5	31184	71	33
+430	Tesla 	Cybertruck Tri Motor	Pickup	6	75000	70	34
+440	Mazda 	MX-30	SUV	5	32646	69	35
+450	Nissan 	Leaf e+	Hatchback	5	37237	68	36
+460	Lexus 	UX 300e	SUV	5	50000	67	37
+470	CUPRA 	el-Born 	Hatchback	4	45000	66	38
+480	Renault 	Zoe ZE50 R135	Hatchback	5	33133	65	39
+490	Mercedes 	EQA 	SUV	5	45000	64	40
+500	Tesla 	Model S Long Range	Liftback	5	79990	63	41
+510	Hyundai 	Kona Electric 39 kWh	SUV	5	33971	62	42
+520	Audi 	e-tron Sportback 55 quattro	SUV	5	81639	61	43
+530	Skoda 	CITIGOe iV 	Hatchback	4	24534	60	44
+540	SEAT 	Mii Electric 	Hatchback	4	20129	59	45
+550	Kia 	e-Soul 64 kWh	SUV	5	36837	58	46
+560	Opel 	Ampera-e 	MPV	5	41906	57	47
+570	Porsche 	Taycan 4S	Sedan	4	102945	56	48
+580	Lightyear 	One 	Liftback	5	149000	55	49
+590	Aiways 	U5	SUV	5	36057	54	50
+600	Audi 	e-tron 55 quattro	SUV	5	79445	53	51
+610	Tesla 	Roadster 	Cabrio	4	215000	52	52
+620	Opel 	Mokka-e 	SUV	5	35000	51	53
+630	Skoda 	Enyaq iV 80	SUV	5	40000	50	54
+640	Tesla 	Model X Long Range	SUV	7	85990	49	55
+650	Honda 	e Advance	Hatchback	4	35921	48	56
+660	DS 	3 Crossback E-Tense	SUV	5	37422	47	57
+670	Renault 	Twingo ZE	Hatchback	4	24790	46	58
+680	Citroen 	e-C4	SUV	5	40000	45	59
+690	Tesla 	Model S Performance	Liftback	5	96990	44	60
+700	Renault 	Zoe ZE40 R110	Hatchback	5	29234	43	61
+710	Tesla 	Model Y Long Range Performance	SUV	7	65620	42	62
+720	Nissan 	Ariya 87kWh	Hatchback	5	50000	41	63
+730	Jaguar 	I-Pace 	SUV	5	75351	40	64
+740	Ford 	Mustang Mach-E ER RWD	SUV	5	54475	39	65
+750	Porsche 	Taycan 4S Plus	Sedan	4	109302	38	66
+760	Nissan 	e-NV200 Evalia	SPV	7	33246	37	67
+770	Tesla 	Cybertruck Dual Motor	Pickup	6	55000	36	68
+780	Renault 	Kangoo Maxi ZE 33	SPV	5	38000	35	69
+790	Ford 	Mustang Mach-E ER AWD	SUV	5	62900	34	70
+800	BMW 	i3s 120 Ah	Hatchback	4	41526	33	71
+810	Skoda 	Enyaq iV 80X	SUV	5	45000	32	72
+820	Porsche 	Taycan Cross Turismo 	Station	4	150000	31	73
+830	Byton 	M-Byte 95 kWh 4WD	SUV	5	64000	30	74
+840	Sono 	Sion 	Hatchback	5	25500	29	75
+850	Kia 	e-Niro 39 kWh	SUV	5	34400	28	76
+860	Audi 	Q4 Sportback e-tron	SUV	5	57500	27	77
+870	Smart 	EQ forfour 	Hatchback	4	22030	26	78
+880	Ford 	Mustang Mach-E SR AWD	SUV	5	54000	25	79
+890	Porsche 	Taycan Turbo	Sedan	4	148301	24	80
+900	Volkswagen 	ID.3 1st	Hatchback	5	38987	23	81
+910	Tesla 	Model X Performance	SUV	7	102990	22	82
+920	Smart 	EQ fortwo coupe	Hatchback	2	21387	21	83
+930	Ford 	Mustang Mach-E SR RWD	SUV	5	46900	20	84
+940	Mercedes 	EQV 300 Long	SPV	7	70631	19	85
+950	Fiat 	500e Hatchback	Hatchback	4	34900	18	86
+960	Tesla 	Cybertruck Single Motor	Pickup	6	45000	17	87
+970	Audi 	e-tron Sportback 50 quattro	SUV	5	69551	16	88
+980	Skoda 	Enyaq iV vRS	SUV	5	47500	15	89
+990	Skoda 	Enyaq iV 60	SUV	5	37500	14	90
+1000	Audi 	e-tron S 55 quattro	SUV	5	93800	13	91
+1010	Smart 	EQ fortwo cabrio	Cabrio	2	24565	12	92
+1020	Kia 	e-Soul 64 kWh	SUV	5	36837	11	93
+1030	Nissan 	Ariya e-4ORCE 87kWh	Hatchback	5	57500	10	94
+1040	Fiat 	500e Convertible	Cabrio	4	37900	9	95
+1050	Volkswagen 	ID.3 Pro Performance	Hatchback	5	35575	8	96
+1060	Kia 	e-Soul 39 kWh	SUV	5	33133	7	97
+1070	Byton 	M-Byte 72 kWh 2WD	SUV	5	53500	6	98
+1080	Nissan 	Ariya 63kWh	Hatchback	5	45000	5	99
+1090	Audi 	e-tron S Sportback 55 quattro	SUV	5	96050	4	100
+1100	Nissan 	Ariya e-4ORCE 63kWh	Hatchback	5	50000	3	101
+1110	Nissan 	Ariya e-4ORCE 87kWh Performance	Hatchback	5	65000	2	102
+1120	Byton 	M-Byte 95 kWh 2WD	SUV	5	62000	1	103
+\.
+
+
+--
+-- TOC entry 3639 (class 0 OID 16413)
+-- Dependencies: 216
+-- Data for Name: carrange; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.carrange (id, range_km, efficiency_whkm, powertrain) FROM stdin;
+5	450	161	AWD
+10	270	167	RWD
+15	400	181	AWD
+20	360	206	RWD
+25	170	168	RWD
+30	610	180	AWD
+35	190	168	FWD
+40	275	164	FWD
+45	310	153	RWD
+50	400	193	AWD
+55	370	216	AWD
+60	220	164	FWD
+65	400	160	FWD
+70	450	178	RWD
+75	250	153	FWD
+80	440	175	RWD
+85	375	223	AWD
+90	195	166	FWD
+95	220	193	FWD
+100	185	156	FWD
+105	275	164	FWD
+110	425	171	AWD
+115	290	179	RWD
+120	425	197	AWD
+125	435	167	AWD
+130	420	183	RWD
+135	350	166	RWD
+140	375	200	AWD
+145	235	161	RWD
+150	250	180	FWD
+155	280	231	AWD
+160	370	173	FWD
+165	315	165	FWD
+170	750	267	AWD
+175	180	178	FWD
+180	325	172	FWD
+185	270	193	FWD
+190	425	181	RWD
+195	310	168	FWD
+200	350	171	AWD
+205	515	184	AWD
+210	255	154	FWD
+215	380	228	AWD
+220	195	166	FWD
+225	195	166	FWD
+230	365	175	FWD
+235	335	173	FWD
+240	365	195	AWD
+245	575	104	AWD
+250	335	188	FWD
+255	365	237	AWD
+260	970	206	AWD
+265	255	176	FWD
+270	420	183	RWD
+275	450	211	AWD
+280	170	168	RWD
+285	250	180	FWD
+290	130	164	RWD
+295	250	180	FWD
+300	505	188	AWD
+305	255	161	FWD
+310	410	177	AWD
+315	440	198	FWD
+320	365	232	AWD
+325	450	200	RWD
+330	425	197	AWD
+335	190	200	FWD
+340	460	261	AWD
+345	160	194	FWD
+350	430	209	AWD
+355	230	165	RWD
+360	400	193	AWD
+365	385	217	AWD
+370	390	244	AWD
+375	225	156	FWD
+380	235	167	FWD
+385	410	188	AWD
+390	95	176	RWD
+395	340	206	AWD
+400	390	215	AWD
+405	340	171	RWD
+410	440	216	AWD
+415	100	167	RWD
+420	360	194	RWD
+425	330	273	FWD
+430	250	168	FWD
+435	390	256	RWD
+440	295	219	AWD
+445	400	193	AWD
+450	320	181	RWD
+455	320	270	AWD
+460	95	176	RWD
+465	365	175	FWD
+470	420	207	AWD
+475	250	168	FWD
+480	340	171	RWD
+485	230	170	FWD
+490	325	222	RWD
+495	330	191	FWD
+500	335	258	AWD
+505	325	194	AWD
+510	375	232	AWD
+515	400	238	AWD
+\.
+
+
+--
+-- TOC entry 3638 (class 0 OID 16408)
+-- Dependencies: 215
+-- Data for Name: performance; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.performance (id, accelsec, topspeed_kmh) FROM stdin;
+1	4.6	233
+2	10	160
+3	4.7	210
+4	6.8	180
+5	9.5	145
+6	2.8	250
+7	9.6	150
+8	8.1	150
+9	5.6	225
+10	6.3	180
+11	5.1	180
+12	7.9	144
+13	7.9	167
+14	4	200
+15	9.7	165
+16	7.9	160
+17	2.8	260
+18	11.9	130
+19	8.2	140
+20	7.3	150
+21	8.1	150
+22	5.1	217
+23	10	160
+24	3.5	240
+25	3.4	261
+26	7.5	160
+27	9	160
+28	4.9	180
+29	7.3	150
+30	8.5	150
+31	6.8	190
+32	7.8	167
+33	11.4	135
+34	3	210
+35	9	150
+36	7.3	157
+37	7.5	160
+38	6.5	160
+39	9.5	140
+40	5	200
+41	3.8	250
+42	9.9	155
+43	5.7	200
+44	12.3	130
+45	12.3	130
+46	7.9	167
+47	7.3	150
+48	4	250
+49	10	150
+50	9	150
+51	5.7	200
+52	2.1	410
+53	8.5	150
+54	8.8	160
+55	4.6	250
+56	8.3	145
+57	8.7	150
+58	12.6	135
+59	9.7	150
+60	2.5	261
+61	11.4	135
+62	3.7	241
+63	7.6	160
+64	4.8	200
+65	7	180
+66	4	250
+67	14	123
+68	5	190
+69	22.4	130
+70	6	180
+71	6.9	160
+72	7	160
+73	3.5	250
+74	5.5	190
+75	9	140
+76	9.8	155
+77	6.3	180
+78	12.7	130
+79	6	180
+80	3.2	260
+81	7.3	160
+82	2.8	250
+83	11.6	130
+84	6.6	180
+85	10	140
+86	9	150
+87	7	180
+88	6.8	190
+89	6.2	180
+90	9	160
+91	4.5	210
+92	11.9	130
+93	7.9	167
+94	5.7	200
+95	9	150
+96	7.3	160
+97	9.9	157
+98	7.5	190
+99	7.5	160
+100	4.5	210
+101	5.9	200
+102	5.1	200
+103	7.5	190
+\.
+
+
+--
+-- TOC entry 3643 (class 0 OID 16446)
+-- Dependencies: 220
+-- Data for Name: user_cars; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.user_cars (id, brand, model) FROM stdin;
+1	vinfast	vf8
+4	dune	buggy
+5	tesla	3
+6	hummer	ev
+\.
+
+
+--
+-- TOC entry 3650 (class 0 OID 0)
+-- Dependencies: 219
+-- Name: user_cars_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_cars_id_seq', 6, true);
+
+
+-- Completed on 2024-05-05 15:46:14 PDT
+
+--
+-- PostgreSQL database dump complete
+--
+

@@ -1,0 +1,104 @@
+id,Brand,Model,BodyStyle,Seats,PriceEuro,battery_id,performance_id
+100,Tesla ,Model 3 Long Range Dual Motor,Sedan,5,55480,103,1
+110,Volkswagen ,ID.3 Pure,Hatchback,5,30000,102,2
+120,Polestar ,2,Liftback,5,56440,101,3
+130,BMW ,iX3,SUV,5,68040,100,4
+140,Honda ,e ,Hatchback,4,32997,99,5
+150,Lucid ,Air ,Sedan,5,105000,98,6
+160,Volkswagen ,e-Golf ,Hatchback,5,31900,97,7
+170,Peugeot ,e-208,Hatchback,5,29682,96,8
+180,Tesla ,Model 3 Standard Range Plus,Sedan,5,46380,95,9
+190,Audi ,Q4 e-tron,SUV,5,55000,94,10
+200,Mercedes ,EQC 400 4MATIC,SUV,5,69484,93,11
+210,Nissan ,Leaf ,Hatchback,5,29234,92,12
+220,Hyundai ,Kona Electric 64 kWh,SUV,5,40795,91,13
+230,BMW ,i4,Sedan,5,65000,90,14
+240,Hyundai ,IONIQ Electric,Liftback,5,34459,89,15
+250,Volkswagen ,ID.3 Pro S,Hatchback,4,40936,88,16
+260,Porsche ,Taycan Turbo S,Sedan,4,180781,87,17
+270,Volkswagen ,e-Up! ,Hatchback,4,21421,86,18
+280,MG ,ZS EV,SUV,5,30000,85,19
+290,Mini ,Cooper SE ,Hatchback,4,31681,84,20
+300,Opel ,Corsa-e ,Hatchback,5,29146,83,21
+310,Tesla ,Model Y Long Range Dual Motor,SUV,7,58620,82,22
+320,Skoda ,Enyaq iV 50,SUV,5,35000,81,23
+330,Audi ,e-tron GT ,Sedan,4,125000,80,24
+340,Tesla ,Model 3 Long Range Performance,Sedan,5,61480,79,25
+350,Volkswagen ,ID.4,SUV,5,45000,78,26
+360,Volkswagen ,ID.3 Pro,Hatchback,5,33000,77,27
+370,Volvo ,XC40 P8 AWD Recharge,SUV,5,60437,76,28
+380,BMW ,i3 120 Ah,Hatchback,4,38017,75,29
+390,Peugeot ,e-2008 SUV,SUV,5,34361,74,30
+400,Audi ,e-tron 50 quattro,SUV,5,67358,73,31
+410,Kia ,e-Niro 64 kWh,SUV,5,38105,72,32
+420,Renault ,Zoe ZE50 R110,Hatchback,5,31184,71,33
+430,Tesla ,Cybertruck Tri Motor,Pickup,6,75000,70,34
+440,Mazda ,MX-30,SUV,5,32646,69,35
+450,Nissan ,Leaf e+,Hatchback,5,37237,68,36
+460,Lexus ,UX 300e,SUV,5,50000,67,37
+470,CUPRA ,el-Born ,Hatchback,4,45000,66,38
+480,Renault ,Zoe ZE50 R135,Hatchback,5,33133,65,39
+490,Mercedes ,EQA ,SUV,5,45000,64,40
+500,Tesla ,Model S Long Range,Liftback,5,79990,63,41
+510,Hyundai ,Kona Electric 39 kWh,SUV,5,33971,62,42
+520,Audi ,e-tron Sportback 55 quattro,SUV,5,81639,61,43
+530,Skoda ,CITIGOe iV ,Hatchback,4,24534,60,44
+540,SEAT ,Mii Electric ,Hatchback,4,20129,59,45
+550,Kia ,e-Soul 64 kWh,SUV,5,36837,58,46
+560,Opel ,Ampera-e ,MPV,5,41906,57,47
+570,Porsche ,Taycan 4S,Sedan,4,102945,56,48
+580,Lightyear ,One ,Liftback,5,149000,55,49
+590,Aiways ,U5,SUV,5,36057,54,50
+600,Audi ,e-tron 55 quattro,SUV,5,79445,53,51
+610,Tesla ,Roadster ,Cabrio,4,215000,52,52
+620,Opel ,Mokka-e ,SUV,5,35000,51,53
+630,Skoda ,Enyaq iV 80,SUV,5,40000,50,54
+640,Tesla ,Model X Long Range,SUV,7,85990,49,55
+650,Honda ,e Advance,Hatchback,4,35921,48,56
+660,DS ,3 Crossback E-Tense,SUV,5,37422,47,57
+670,Renault ,Twingo ZE,Hatchback,4,24790,46,58
+680,Citroen ,e-C4,SUV,5,40000,45,59
+690,Tesla ,Model S Performance,Liftback,5,96990,44,60
+700,Renault ,Zoe ZE40 R110,Hatchback,5,29234,43,61
+710,Tesla ,Model Y Long Range Performance,SUV,7,65620,42,62
+720,Nissan ,Ariya 87kWh,Hatchback,5,50000,41,63
+730,Jaguar ,I-Pace ,SUV,5,75351,40,64
+740,Ford ,Mustang Mach-E ER RWD,SUV,5,54475,39,65
+750,Porsche ,Taycan 4S Plus,Sedan,4,109302,38,66
+760,Nissan ,e-NV200 Evalia,SPV,7,33246,37,67
+770,Tesla ,Cybertruck Dual Motor,Pickup,6,55000,36,68
+780,Renault ,Kangoo Maxi ZE 33,SPV,5,38000,35,69
+790,Ford ,Mustang Mach-E ER AWD,SUV,5,62900,34,70
+800,BMW ,i3s 120 Ah,Hatchback,4,41526,33,71
+810,Skoda ,Enyaq iV 80X,SUV,5,45000,32,72
+820,Porsche ,Taycan Cross Turismo ,Station,4,150000,31,73
+830,Byton ,M-Byte 95 kWh 4WD,SUV,5,64000,30,74
+840,Sono ,Sion ,Hatchback,5,25500,29,75
+850,Kia ,e-Niro 39 kWh,SUV,5,34400,28,76
+860,Audi ,Q4 Sportback e-tron,SUV,5,57500,27,77
+870,Smart ,EQ forfour ,Hatchback,4,22030,26,78
+880,Ford ,Mustang Mach-E SR AWD,SUV,5,54000,25,79
+890,Porsche ,Taycan Turbo,Sedan,4,148301,24,80
+900,Volkswagen ,ID.3 1st,Hatchback,5,38987,23,81
+910,Tesla ,Model X Performance,SUV,7,102990,22,82
+920,Smart ,EQ fortwo coupe,Hatchback,2,21387,21,83
+930,Ford ,Mustang Mach-E SR RWD,SUV,5,46900,20,84
+940,Mercedes ,EQV 300 Long,SPV,7,70631,19,85
+950,Fiat ,500e Hatchback,Hatchback,4,34900,18,86
+960,Tesla ,Cybertruck Single Motor,Pickup,6,45000,17,87
+970,Audi ,e-tron Sportback 50 quattro,SUV,5,69551,16,88
+980,Skoda ,Enyaq iV vRS,SUV,5,47500,15,89
+990,Skoda ,Enyaq iV 60,SUV,5,37500,14,90
+1000,Audi ,e-tron S 55 quattro,SUV,5,93800,13,91
+1010,Smart ,EQ fortwo cabrio,Cabrio,2,24565,12,92
+1020,Kia ,e-Soul 64 kWh,SUV,5,36837,11,93
+1030,Nissan ,Ariya e-4ORCE 87kWh,Hatchback,5,57500,10,94
+1040,Fiat ,500e Convertible,Cabrio,4,37900,9,95
+1050,Volkswagen ,ID.3 Pro Performance,Hatchback,5,35575,8,96
+1060,Kia ,e-Soul 39 kWh,SUV,5,33133,7,97
+1070,Byton ,M-Byte 72 kWh 2WD,SUV,5,53500,6,98
+1080,Nissan ,Ariya 63kWh,Hatchback,5,45000,5,99
+1090,Audi ,e-tron S Sportback 55 quattro,SUV,5,96050,4,100
+1100,Nissan ,Ariya e-4ORCE 63kWh,Hatchback,5,50000,3,101
+1110,Nissan ,Ariya e-4ORCE 87kWh Performance,Hatchback,5,65000,2,102
+1120,Byton ,M-Byte 95 kWh 2WD,SUV,5,62000,1,103
